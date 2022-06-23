@@ -1,6 +1,6 @@
 # web-emoji
 
-This is an Elm module that lets you seamlessly use Mutant Standard emoji in your web app.
+This is an Elm module that lets you seamlessly use [Mutant Standard emoji](https://mutant.tech) in your web app.
 
 Decode a Mutant Standard Data JSON, pair it with a set of Mutant Standard emoji and use it to:
 - Create accessible emoji views with image descriptions.
