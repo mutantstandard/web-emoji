@@ -12,6 +12,10 @@ module Mtnt exposing ( Emoji
                      , hoofColors
                      , allColors
                      , isValidModifierPairing
+                     , shortcodeFromMM
+                     , shortcodeFromCM
+                     , emojiHasMM
+                     , emojiHasCM
 
                      , getEmojiFromShortcode
                      , getDesc
@@ -95,7 +99,7 @@ If codepoint(s), do exist, then the field is a list of ints.
 codepointDecoder : Decoder (List Int)
 codepointDecoder = 
      oneOf [ list int
-           , string |> andThen (\a -> succeed [])
+           , string |> andThen (\_ -> succeed [])
            ]
 
 
